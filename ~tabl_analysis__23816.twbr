@@ -1,0 +1,2714 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (bioreactor_data_cleaned)' inline='true' name='federated.14nth1j1mzcu7v10n55ey1padwc4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bioreactor_data_cleaned' name='excel-direct.0i3otyl1fmaxxa12j548z10zbjoz'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='//wsl.localhost/Ubuntu/home/serli/workspace/biontech_app/data/processed/bioreactor_data_cleaned.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0i3otyl1fmaxxa12j548z10zbjoz' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:L301:no:A1:L301:0' header='yes' outcome='6'>
+            <column datatype='string' name='Timestamp' ordinal='0' />
+            <column datatype='string' name='batch_id' ordinal='1' />
+            <column datatype='real' name='temp' ordinal='2' />
+            <column datatype='real' name='pH' ordinal='3' />
+            <column datatype='real' name='pressure' ordinal='4' />
+            <column datatype='real' name='quality' ordinal='5' />
+            <column datatype='real' name='dissolved_oxygen' ordinal='6' />
+            <column datatype='real' name='conductivity' ordinal='7' />
+            <column datatype='real' name='uv_absorbance' ordinal='8' />
+            <column datatype='real' name='rna_folding_efficiency' ordinal='9' />
+            <column datatype='real' name='nanopore_rna_integrity' ordinal='10' />
+            <column datatype='real' name='enzyme_concentration' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L301:no:A1:L301:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timestamp</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Timestamp]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Timestamp</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>batch_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[batch_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>batch_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LDE_RDE_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>temp</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[temp]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>temp</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pH]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>pH</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pressure</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pressure]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>pressure</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quality</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[quality]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>quality</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dissolved_oxygen</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dissolved_oxygen]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>dissolved_oxygen</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>conductivity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[conductivity]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>conductivity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uv_absorbance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[uv_absorbance]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>uv_absorbance</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rna_folding_efficiency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rna_folding_efficiency]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>rna_folding_efficiency</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>nanopore_rna_integrity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[nanopore_rna_integrity]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>nanopore_rna_integrity</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>enzyme_concentration</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[enzyme_concentration]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>enzyme_concentration</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Mean pH' datatype='real' name='[Calculation_1675902035002650624]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([pH])' />
+      </column>
+      <column caption='count Batch_ID' datatype='integer' name='[Calculation_1675902035006468097]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='count([batch_id])' />
+      </column>
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_48902279169D44DDBAE65FE6392BE5AC]' role='measure' type='quantitative' />
+      <column caption='Batch Id' datatype='string' name='[batch_id]' role='dimension' type='nominal' />
+      <column caption='Conductivity' datatype='real' name='[conductivity]' role='measure' type='quantitative' />
+      <column caption='Dissolved Oxygen' datatype='real' name='[dissolved_oxygen]' role='measure' type='quantitative' />
+      <column caption='Enzyme Concentration' datatype='real' name='[enzyme_concentration]' role='measure' type='quantitative' />
+      <column caption='Nanopore Rna Integrity' datatype='real' name='[nanopore_rna_integrity]' role='measure' type='quantitative' />
+      <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative' />
+      <column caption='Pressure' datatype='real' name='[pressure]' role='measure' type='quantitative' />
+      <column caption='Quality' datatype='real' name='[quality]' role='measure' type='quantitative' />
+      <column caption='Rna Folding Efficiency' datatype='real' name='[rna_folding_efficiency]' role='measure' type='quantitative' />
+      <column caption='Temp' datatype='real' name='[temp]' role='measure' type='quantitative' />
+      <column caption='Uv Absorbance' datatype='real' name='[uv_absorbance]' role='measure' type='quantitative' />
+      <column-instance column='[batch_id]' derivation='None' name='[none:batch_id:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Batch Id)' hidden='true' name='[Action (Batch Id)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[batch_id]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/serli/AppData/Local/Temp/TableauTemp/#TableauTemp_0v9z6ce0s0y62g1602b5t1x77n5v.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/10/2024 09:27:07 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Timestamp</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Timestamp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Timestamp</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>batch_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[batch_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>batch_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>temp</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[temp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>temp</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pH</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pH</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pressure</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pressure]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pressure</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quality</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[quality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quality</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dissolved_oxygen</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dissolved_oxygen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dissolved_oxygen</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>conductivity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[conductivity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>conductivity</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>uv_absorbance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[uv_absorbance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>uv_absorbance</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rna_folding_efficiency</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rna_folding_efficiency]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rna_folding_efficiency</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>nanopore_rna_integrity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[nanopore_rna_integrity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>nanopore_rna_integrity</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>enzyme_concentration</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[enzyme_concentration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>enzyme_concentration</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_48902279169D44DDBAE65FE6392BE5AC]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:batch_id:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Batch_001&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Batch_003&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Batch_002&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_48902279169D44DDBAE65FE6392BE5AC'>
+            <properties context=''>
+              <relation connection='excel-direct.0i3otyl1fmaxxa12j548z10zbjoz' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:L301:no:A1:L301:0' header='yes' outcome='6'>
+                  <column datatype='string' name='Timestamp' ordinal='0' />
+                  <column datatype='string' name='batch_id' ordinal='1' />
+                  <column datatype='real' name='temp' ordinal='2' />
+                  <column datatype='real' name='pH' ordinal='3' />
+                  <column datatype='real' name='pressure' ordinal='4' />
+                  <column datatype='real' name='quality' ordinal='5' />
+                  <column datatype='real' name='dissolved_oxygen' ordinal='6' />
+                  <column datatype='real' name='conductivity' ordinal='7' />
+                  <column datatype='real' name='uv_absorbance' ordinal='8' />
+                  <column datatype='real' name='rna_folding_efficiency' ordinal='9' />
+                  <column datatype='real' name='nanopore_rna_integrity' ordinal='10' />
+                  <column datatype='real' name='enzyme_concentration' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (shape_values)' inline='true' name='federated.1dwy7tw08l5khd10lfgaf1u2l751' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='shape_values' name='excel-direct.1uix80b0ydfvyz13948y113mx8pn'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='//wsl.localhost/Ubuntu/home/serli/workspace/biontech_app/results/shape_values.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1uix80b0ydfvyz13948y113mx8pn' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:L236:no:A1:L236:0' header='yes' outcome='6'>
+            <column datatype='real' name='Batch_ID_encoded' ordinal='0' />
+            <column datatype='real' name='Temperature (°C)' ordinal='1' />
+            <column datatype='real' name='pH' ordinal='2' />
+            <column datatype='real' name='Pressure (kPa)' ordinal='3' />
+            <column datatype='real' name='Quality Metric (%)' ordinal='4' />
+            <column datatype='real' name='Dissolved Oxygen (%)' ordinal='5' />
+            <column datatype='real' name='Conductivity (mS/cm)' ordinal='6' />
+            <column datatype='real' name='UV Absorbance' ordinal='7' />
+            <column datatype='real' name='RNA Folding Efficiency (%)' ordinal='8' />
+            <column datatype='real' name='Nanopore RNA Integrity (Score)' ordinal='9' />
+            <column datatype='real' name='Enzyme Concentration (U/mL)' ordinal='10' />
+            <column datatype='integer' name='True_Label' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L236:no:A1:L236:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batch_ID_encoded</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Batch_ID_encoded]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Batch_ID_encoded</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temperature (°C)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temperature (°C)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Temperature (°C)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pH]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>pH</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pressure (kPa)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pressure (kPa)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Pressure (kPa)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quality Metric (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Quality Metric (%)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Quality Metric (%)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dissolved Oxygen (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dissolved Oxygen (%)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Dissolved Oxygen (%)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conductivity (mS/cm)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Conductivity (mS/cm)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Conductivity (mS/cm)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UV Absorbance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UV Absorbance]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>UV Absorbance</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RNA Folding Efficiency (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RNA Folding Efficiency (%)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>RNA Folding Efficiency (%)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nanopore RNA Integrity (Score)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Nanopore RNA Integrity (Score)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Nanopore RNA Integrity (Score)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Enzyme Concentration (U/mL)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Enzyme Concentration (U/mL)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Enzyme Concentration (U/mL)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>True_Label</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[True_Label]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>True_Label</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Batch ID encoded' datatype='real' name='[Batch_ID_encoded]' role='measure' type='quantitative' />
+      <column caption='True Label' datatype='integer' name='[True_Label]' role='measure' type='quantitative' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]' role='measure' type='quantitative' />
+      <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/serli/AppData/Local/Temp/TableauTemp/#TableauTemp_1992ne00a8p1o9138cdw41l9xp34.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/10/2024 12:51:55 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Batch_ID_encoded</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Batch_ID_encoded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Batch_ID_encoded</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Temperature (°C)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Temperature (°C)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Temperature (°C)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pH</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pH</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pressure (kPa)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pressure (kPa)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pressure (kPa)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quality Metric (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Quality Metric (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quality Metric (%)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dissolved Oxygen (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Dissolved Oxygen (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dissolved Oxygen (%)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Conductivity (mS/cm)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Conductivity (mS/cm)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Conductivity (mS/cm)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UV Absorbance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[UV Absorbance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UV Absorbance</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RNA Folding Efficiency (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RNA Folding Efficiency (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RNA Folding Efficiency (%)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nanopore RNA Integrity (Score)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Nanopore RNA Integrity (Score)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nanopore RNA Integrity (Score)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Enzyme Concentration (U/mL)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Enzyme Concentration (U/mL)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Enzyme Concentration (U/mL)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>True_Label</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[True_Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>True_Label</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D'>
+            <properties context=''>
+              <relation connection='excel-direct.1uix80b0ydfvyz13948y113mx8pn' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:L236:no:A1:L236:0' header='yes' outcome='6'>
+                  <column datatype='real' name='Batch_ID_encoded' ordinal='0' />
+                  <column datatype='real' name='Temperature (°C)' ordinal='1' />
+                  <column datatype='real' name='pH' ordinal='2' />
+                  <column datatype='real' name='Pressure (kPa)' ordinal='3' />
+                  <column datatype='real' name='Quality Metric (%)' ordinal='4' />
+                  <column datatype='real' name='Dissolved Oxygen (%)' ordinal='5' />
+                  <column datatype='real' name='Conductivity (mS/cm)' ordinal='6' />
+                  <column datatype='real' name='UV Absorbance' ordinal='7' />
+                  <column datatype='real' name='RNA Folding Efficiency (%)' ordinal='8' />
+                  <column datatype='real' name='Nanopore RNA Integrity (Score)' ordinal='9' />
+                  <column datatype='real' name='Enzyme Concentration (U/mL)' ordinal='10' />
+                  <column datatype='integer' name='True_Label' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='Sheet1 (shape_values_2)' inline='true' name='federated.1yqk5uo0er4nkm1f3bsrf1hqdido' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='shape_values_2' name='excel-direct.0zdd08402xcy9q1g8oy141satimt'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='//wsl.localhost/Ubuntu/home/serli/workspace/biontech_app/results/shape_values_2.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0zdd08402xcy9q1g8oy141satimt' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:L236:no:A1:L236:0' header='yes' outcome='6'>
+            <column datatype='real' name='Batch ID' ordinal='0' />
+            <column datatype='real' name='Temperature (°C)' ordinal='1' />
+            <column datatype='real' name='pH' ordinal='2' />
+            <column datatype='real' name='Pressure (kPa)' ordinal='3' />
+            <column datatype='real' name='Quality Metric (%)' ordinal='4' />
+            <column datatype='real' name='Dissolved Oxygen (%)' ordinal='5' />
+            <column datatype='real' name='Conductivity (mS/cm)' ordinal='6' />
+            <column datatype='real' name='UV Absorbance' ordinal='7' />
+            <column datatype='real' name='RNA Folding Efficiency (%)' ordinal='8' />
+            <column datatype='real' name='Nanopore RNA Integrity (Score)' ordinal='9' />
+            <column datatype='real' name='Enzyme Concentration (U/mL)' ordinal='10' />
+            <column datatype='integer' name='True_Label' ordinal='11' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:L236:no:A1:L236:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Batch ID</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Batch ID]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Batch ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Temperature (°C)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Temperature (°C)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Temperature (°C)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pH</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pH]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>pH</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pressure (kPa)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pressure (kPa)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Pressure (kPa)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quality Metric (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Quality Metric (%)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Quality Metric (%)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dissolved Oxygen (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Dissolved Oxygen (%)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Dissolved Oxygen (%)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conductivity (mS/cm)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Conductivity (mS/cm)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Conductivity (mS/cm)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UV Absorbance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[UV Absorbance]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>UV Absorbance</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RNA Folding Efficiency (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RNA Folding Efficiency (%)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>RNA Folding Efficiency (%)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nanopore RNA Integrity (Score)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Nanopore RNA Integrity (Score)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Nanopore RNA Integrity (Score)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Enzyme Concentration (U/mL)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Enzyme Concentration (U/mL)]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Enzyme Concentration (U/mL)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>True_Label</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[True_Label]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>True_Label</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='real' name='[Batch ID]' role='dimension' type='ordinal' />
+      <column caption='True Label' datatype='integer' name='[True_Label]' role='measure' type='quantitative' />
+      <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]' role='measure' type='quantitative' />
+      <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/serli/AppData/Local/Temp/TableauTemp/#TableauTemp_1u8k1751oqlrer1156i1e10p77d5.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/10/2024 12:56:41 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Batch ID</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Batch ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Batch ID</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Temperature (°C)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Temperature (°C)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Temperature (°C)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>pH</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[pH]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>pH</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Pressure (kPa)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Pressure (kPa)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Pressure (kPa)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Quality Metric (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Quality Metric (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Quality Metric (%)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dissolved Oxygen (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Dissolved Oxygen (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dissolved Oxygen (%)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Conductivity (mS/cm)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Conductivity (mS/cm)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Conductivity (mS/cm)</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UV Absorbance</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[UV Absorbance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UV Absorbance</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RNA Folding Efficiency (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[RNA Folding Efficiency (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RNA Folding Efficiency (%)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Nanopore RNA Integrity (Score)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Nanopore RNA Integrity (Score)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Nanopore RNA Integrity (Score)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Enzyme Concentration (U/mL)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Enzyme Concentration (U/mL)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Enzyme Concentration (U/mL)</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>235</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>True_Label</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[True_Label]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>True_Label</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='Sheet1' id='Sheet1_237A7CD1C22643C3B1EDDF92166D4A6D'>
+            <properties context=''>
+              <relation connection='excel-direct.0zdd08402xcy9q1g8oy141satimt' name='Sheet1' table='[Sheet1$]' type='table'>
+                <columns gridOrigin='A1:L236:no:A1:L236:0' header='yes' outcome='6'>
+                  <column datatype='real' name='Batch ID' ordinal='0' />
+                  <column datatype='real' name='Temperature (°C)' ordinal='1' />
+                  <column datatype='real' name='pH' ordinal='2' />
+                  <column datatype='real' name='Pressure (kPa)' ordinal='3' />
+                  <column datatype='real' name='Quality Metric (%)' ordinal='4' />
+                  <column datatype='real' name='Dissolved Oxygen (%)' ordinal='5' />
+                  <column datatype='real' name='Conductivity (mS/cm)' ordinal='6' />
+                  <column datatype='real' name='UV Absorbance' ordinal='7' />
+                  <column datatype='real' name='RNA Folding Efficiency (%)' ordinal='8' />
+                  <column datatype='real' name='Nanopore RNA Integrity (Score)' ordinal='9' />
+                  <column datatype='real' name='Enzyme Concentration (U/mL)' ordinal='10' />
+                  <column datatype='integer' name='True_Label' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='bioreactor_data_cleaned' inline='true' name='federated.0i0q1s31i24t0e1cngow904af67o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bioreactor_data_cleaned' name='textscan.0ng56vd1sil1xm1afujke025i01l'>
+            <connection class='textscan' directory='//wsl.localhost/Ubuntu/home/serli/workspace/biontech_app/data/processed' filename='bioreactor_data_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0ng56vd1sil1xm1afujke025i01l' name='bioreactor_data_cleaned.csv' table='[bioreactor_data_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='de_DE' separator='_'>
+            <column datatype='string' name='Timestamp,batch' ordinal='0' />
+            <column datatype='string' name='id,temp,pH,pressure,quality,dissolved' ordinal='1' />
+            <column datatype='string' name='oxygen,conductivity,uv' ordinal='2' />
+            <column datatype='string' name='absorbance,rna' ordinal='3' />
+            <column datatype='string' name='folding' ordinal='4' />
+            <column datatype='string' name='efficiency,nanopore' ordinal='5' />
+            <column datatype='string' name='rna' ordinal='6' />
+            <column datatype='string' name='integrity,enzyme' ordinal='7' />
+            <column datatype='string' name='concentration' ordinal='8' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bioreactor_data_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;de&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;_&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;de_DE&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Timestamp,batch</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Timestamp,batch]</local-name>
+            <parent-name>[bioreactor_data_cleaned.csv]</parent-name>
+            <remote-alias>Timestamp,batch</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id,temp,pH,pressure,quality,dissolved</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[id,temp,pH,pressure,quality,dissolved]</local-name>
+            <parent-name>[bioreactor_data_cleaned.csv]</parent-name>
+            <remote-alias>id,temp,pH,pressure,quality,dissolved</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>oxygen,conductivity,uv</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[oxygen,conductivity,uv]</local-name>
+            <parent-name>[bioreactor_data_cleaned.csv]</parent-name>
+            <remote-alias>oxygen,conductivity,uv</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>absorbance,rna</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[absorbance,rna]</local-name>
+            <parent-name>[bioreactor_data_cleaned.csv]</parent-name>
+            <remote-alias>absorbance,rna</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>folding</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[folding]</local-name>
+            <parent-name>[bioreactor_data_cleaned.csv]</parent-name>
+            <remote-alias>folding</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>efficiency,nanopore</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[efficiency,nanopore]</local-name>
+            <parent-name>[bioreactor_data_cleaned.csv]</parent-name>
+            <remote-alias>efficiency,nanopore</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rna</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rna]</local-name>
+            <parent-name>[bioreactor_data_cleaned.csv]</parent-name>
+            <remote-alias>rna</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>integrity,enzyme</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[integrity,enzyme]</local-name>
+            <parent-name>[bioreactor_data_cleaned.csv]</parent-name>
+            <remote-alias>integrity,enzyme</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>concentration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[concentration]</local-name>
+            <parent-name>[bioreactor_data_cleaned.csv]</parent-name>
+            <remote-alias>concentration</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LDE_RDE' />
+            <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='bioreactor_data_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]' role='measure' type='quantitative' />
+      <column caption='Absorbance,Rna' datatype='string' name='[absorbance,rna]' role='dimension' type='nominal' />
+      <column caption='Concentration' datatype='string' name='[concentration]' role='dimension' type='nominal' />
+      <column caption='Efficiency,Nanopore' datatype='string' name='[efficiency,nanopore]' role='dimension' type='nominal' />
+      <column caption='Folding' datatype='string' name='[folding]' role='dimension' type='nominal' />
+      <column caption='Integrity,Enzyme' datatype='string' name='[integrity,enzyme]' role='dimension' type='nominal' />
+      <column caption='Oxygen,Conductivity,Uv' datatype='string' name='[oxygen,conductivity,uv]' role='dimension' type='nominal' />
+      <column caption='Rna' datatype='string' name='[rna]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/serli/AppData/Local/Temp/TableauTemp/#TableauTemp_1kgjs7o1v5wm8s18ugocy0h0yzk2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/10/2024 01:01:56 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Timestamp,batch</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Timestamp,batch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Timestamp,batch</remote-alias>
+              <ordinal>0</ordinal>
+              <family>bioreactor_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id,temp,pH,pressure,quality,dissolved</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[id,temp,pH,pressure,quality,dissolved]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id,temp,pH,pressure,quality,dissolved</remote-alias>
+              <ordinal>1</ordinal>
+              <family>bioreactor_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>300</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>oxygen,conductivity,uv</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[oxygen,conductivity,uv]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>oxygen,conductivity,uv</remote-alias>
+              <ordinal>2</ordinal>
+              <family>bioreactor_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>absorbance,rna</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[absorbance,rna]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>absorbance,rna</remote-alias>
+              <ordinal>3</ordinal>
+              <family>bioreactor_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>folding</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[folding]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>folding</remote-alias>
+              <ordinal>4</ordinal>
+              <family>bioreactor_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>efficiency,nanopore</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[efficiency,nanopore]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>efficiency,nanopore</remote-alias>
+              <ordinal>5</ordinal>
+              <family>bioreactor_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rna</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[rna]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rna</remote-alias>
+              <ordinal>6</ordinal>
+              <family>bioreactor_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>integrity,enzyme</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[integrity,enzyme]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>integrity,enzyme</remote-alias>
+              <ordinal>7</ordinal>
+              <family>bioreactor_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>concentration</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[concentration]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>concentration</remote-alias>
+              <ordinal>8</ordinal>
+              <family>bioreactor_data_cleaned.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LDE_RDE' />
+              <object-id>[bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Germany&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='bioreactor_data_cleaned.csv' id='bioreactor_data_cleaned.csv_77E8354CC4354AFCBCAE1CCC250C03DB'>
+            <properties context=''>
+              <relation connection='textscan.0ng56vd1sil1xm1afujke025i01l' name='bioreactor_data_cleaned.csv' table='[bioreactor_data_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='de_DE' separator='_'>
+                  <column datatype='string' name='Timestamp,batch' ordinal='0' />
+                  <column datatype='string' name='id,temp,pH,pressure,quality,dissolved' ordinal='1' />
+                  <column datatype='string' name='oxygen,conductivity,uv' ordinal='2' />
+                  <column datatype='string' name='absorbance,rna' ordinal='3' />
+                  <column datatype='string' name='folding' ordinal='4' />
+                  <column datatype='string' name='efficiency,nanopore' ordinal='5' />
+                  <column datatype='string' name='rna' ordinal='6' />
+                  <column datatype='string' name='integrity,enzyme' ordinal='7' />
+                  <column datatype='string' name='concentration' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter1' name='[Action1_59C12ABA507A4C459E2A3A7649B929C7]'>
+      <activation type='on-select' />
+      <source dashboard='Showcase Dashboard' type='sheet' worksheet='Batch_prop' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Showcase Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Batch_prop'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Batch Prop&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (bioreactor_data_cleaned)' name='federated.14nth1j1mzcu7v10n55ey1padwc4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14nth1j1mzcu7v10n55ey1padwc4'>
+            <column caption='count Batch_ID' datatype='integer' name='[Calculation_1675902035006468097]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='count([batch_id])' />
+            </column>
+            <column caption='Batch Id' datatype='string' name='[batch_id]' role='dimension' type='nominal' />
+            <column-instance column='[batch_id]' derivation='None' name='[none:batch_id:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1675902035006468097]' derivation='User' name='[usr:Calculation_1675902035006468097:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+              <text column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[usr:Calculation_1675902035006468097:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{1AF735BF-D74A-4A07-93F6-E6E2C97BCBCC}' />
+    </worksheet>
+    <worksheet name='Nanopore_Integ'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Mean Stats</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (bioreactor_data_cleaned)' name='federated.14nth1j1mzcu7v10n55ey1padwc4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14nth1j1mzcu7v10n55ey1padwc4'>
+            <column caption='Batch Id' datatype='string' name='[batch_id]' role='dimension' type='nominal' />
+            <column caption='Nanopore Rna Integrity' datatype='real' name='[nanopore_rna_integrity]' role='measure' type='quantitative' />
+            <column-instance column='[batch_id]' derivation='None' name='[none:batch_id:nk]' pivot='key' type='nominal' />
+            <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative' />
+            <column-instance column='[nanopore_rna_integrity]' derivation='Sum' name='[sum:nanopore_rna_integrity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pH]' derivation='Sum' name='[sum:pH:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[temp]' derivation='Sum' name='[sum:temp:qk]' pivot='key' type='quantitative' />
+            <column caption='Temp' datatype='real' name='[temp]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[Action (Batch Id)]'>
+            <groupfilter function='member' level='[batch_id]' member='&quot;Batch_002&quot;' user:ui-action-filter='[Action1_59C12ABA507A4C459E2A3A7649B929C7]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14nth1j1mzcu7v10n55ey1padwc4].[Action (Batch Id)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' value='101' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:temp:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:pH:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+            </encodings>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' x-axis-name='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:nanopore_rna_integrity:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]</rows>
+        <cols>([federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:temp:qk] + ([federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:pH:qk] + [federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:nanopore_rna_integrity:qk]))</cols>
+      </table>
+      <simple-id uuid='{508B60C4-1C02-4863-8F92-9024E2C367FB}' />
+    </worksheet>
+    <worksheet name='SHAP'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>SHAP Feature Explainability Values</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (shape_values)' name='federated.1dwy7tw08l5khd10lfgaf1u2l751' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dwy7tw08l5khd10lfgaf1u2l751'>
+            <column caption='Batch ID encoded' datatype='real' name='[Batch_ID_encoded]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Conductivity (mS/cm)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Dissolved Oxygen (%)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Enzyme Concentration (U/mL)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Nanopore RNA Integrity (Score)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Pressure (kPa)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Quality Metric (%)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[RNA Folding Efficiency (%)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Temperature (°C)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[UV Absorbance]' role='measure' type='quantitative' />
+            <column caption='Sheet1' datatype='table' name='[__tableau_internal_object_id__].[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D:qk]' pivot='key' type='quantitative' />
+            <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative' />
+            <column-instance column='[Batch_ID_encoded]' derivation='Sum' name='[sum:Batch_ID_encoded:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Conductivity (mS/cm)]' derivation='Sum' name='[sum:Conductivity (mS/cm):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dissolved Oxygen (%)]' derivation='Sum' name='[sum:Dissolved Oxygen (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Enzyme Concentration (U/mL)]' derivation='Sum' name='[sum:Enzyme Concentration (U/mL):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Nanopore RNA Integrity (Score)]' derivation='Sum' name='[sum:Nanopore RNA Integrity (Score):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pressure (kPa)]' derivation='Sum' name='[sum:Pressure (kPa):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quality Metric (%)]' derivation='Sum' name='[sum:Quality Metric (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[RNA Folding Efficiency (%)]' derivation='Sum' name='[sum:RNA Folding Efficiency (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Temperature (°C)]' derivation='Sum' name='[sum:Temperature (°C):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[UV Absorbance]' derivation='Sum' name='[sum:UV Absorbance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pH]' derivation='Sum' name='[sum:pH:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dwy7tw08l5khd10lfgaf1u2l751].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:Batch_ID_encoded:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:Conductivity (mS/cm):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[__tableau_internal_object_id__].[cnt:Sheet1_4DA705FFE60242DAABC99EFD9DC48D7D:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:Dissolved Oxygen (\%):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:Enzyme Concentration (U/mL):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:Nanopore RNA Integrity (Score):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:pH:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:Pressure (kPa):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:Quality Metric (\%):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:RNA Folding Efficiency (\%):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:Temperature (°C):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:UV Absorbance:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1dwy7tw08l5khd10lfgaf1u2l751].[:Measure Names]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1dwy7tw08l5khd10lfgaf1u2l751].[Multiple Values]' field-type='quantitative' max='0.10000000000000001' min='-0.10000000000000001' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:Batch_ID_encoded:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1dwy7tw08l5khd10lfgaf1u2l751].[:Measure Names]</rows>
+        <cols>[federated.1dwy7tw08l5khd10lfgaf1u2l751].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{08D45FD9-6190-4F71-812E-6919F263E308}' />
+    </worksheet>
+    <worksheet name='SHAP True Label'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (shape_values_2)' name='federated.1yqk5uo0er4nkm1f3bsrf1hqdido' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1yqk5uo0er4nkm1f3bsrf1hqdido'>
+            <column datatype='real' name='[Conductivity (mS/cm)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Dissolved Oxygen (%)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Enzyme Concentration (U/mL)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Nanopore RNA Integrity (Score)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Pressure (kPa)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Quality Metric (%)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[RNA Folding Efficiency (%)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Temperature (°C)]' role='measure' type='quantitative' />
+            <column caption='True Label' datatype='integer' name='[True_Label]' role='measure' type='quantitative' />
+            <column datatype='real' name='[UV Absorbance]' role='measure' type='quantitative' />
+            <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative' />
+            <column-instance column='[Conductivity (mS/cm)]' derivation='Sum' name='[sum:Conductivity (mS/cm):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dissolved Oxygen (%)]' derivation='Sum' name='[sum:Dissolved Oxygen (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Enzyme Concentration (U/mL)]' derivation='Sum' name='[sum:Enzyme Concentration (U/mL):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Nanopore RNA Integrity (Score)]' derivation='Sum' name='[sum:Nanopore RNA Integrity (Score):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Pressure (kPa)]' derivation='Sum' name='[sum:Pressure (kPa):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Quality Metric (%)]' derivation='Sum' name='[sum:Quality Metric (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[RNA Folding Efficiency (%)]' derivation='Sum' name='[sum:RNA Folding Efficiency (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Temperature (°C)]' derivation='Sum' name='[sum:Temperature (°C):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[True_Label]' derivation='Sum' name='[sum:True_Label:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[UV Absorbance]' derivation='Sum' name='[sum:UV Absorbance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[pH]' derivation='Sum' name='[sum:pH:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:Conductivity (mS/cm):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:Dissolved Oxygen (\%):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:Enzyme Concentration (U/mL):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:Nanopore RNA Integrity (Score):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:pH:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:Pressure (kPa):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:Quality Metric (\%):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:RNA Folding Efficiency (\%):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:Temperature (°C):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:UV Absorbance:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[:Measure Names]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[Multiple Values]' field-type='quantitative' max='0.065110049005964551' min='-0.3' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:True_Label:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:True_Label:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[:Measure Names]</rows>
+        <cols>[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{B7367E58-F721-4A35-A1CF-959D40B1857B}' />
+    </worksheet>
+    <worksheet name='UV_batch'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (bioreactor_data_cleaned)' name='federated.14nth1j1mzcu7v10n55ey1padwc4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14nth1j1mzcu7v10n55ey1padwc4'>
+            <column caption='Batch Id' datatype='string' name='[batch_id]' role='dimension' type='nominal' />
+            <column-instance column='[batch_id]' derivation='None' name='[none:batch_id:nk]' pivot='key' type='nominal' />
+            <column caption='Pressure' datatype='real' name='[pressure]' role='measure' type='quantitative' />
+            <column caption='Rna Folding Efficiency' datatype='real' name='[rna_folding_efficiency]' role='measure' type='quantitative' />
+            <column-instance column='[pressure]' derivation='Sum' name='[sum:pressure:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[rna_folding_efficiency]' derivation='Sum' name='[sum:rna_folding_efficiency:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[uv_absorbance]' derivation='Sum' name='[sum:uv_absorbance:qk]' pivot='key' type='quantitative' />
+            <column caption='Uv Absorbance' datatype='real' name='[uv_absorbance]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[Action (Batch Id)]'>
+            <groupfilter function='member' level='[batch_id]' member='&quot;Batch_002&quot;' user:ui-action-filter='[Action1_59C12ABA507A4C459E2A3A7649B929C7]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14nth1j1mzcu7v10n55ey1padwc4].[Action (Batch Id)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:rna_folding_efficiency:qk]' value='68' />
+            <format attr='width' field='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:pressure:qk]' value='68' />
+            <format attr='width' field='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:uv_absorbance:qk]' value='68' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' value='94' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:rna_folding_efficiency:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:pressure:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:uv_absorbance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:rna_folding_efficiency:qk] + ([federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:pressure:qk] + [federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:uv_absorbance:qk]))</rows>
+        <cols>[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]</cols>
+      </table>
+      <simple-id uuid='{CA7E9FD5-4A39-4B16-AAEB-472B13792DAF}' />
+    </worksheet>
+    <worksheet name='ph_time'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>pH over time with mean value</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (bioreactor_data_cleaned)' name='federated.14nth1j1mzcu7v10n55ey1padwc4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14nth1j1mzcu7v10n55ey1padwc4'>
+            <column caption='Mean pH' datatype='real' name='[Calculation_1675902035002650624]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([pH])' />
+            </column>
+            <column datatype='string' name='[Timestamp]' role='dimension' type='nominal' />
+            <column caption='Batch Id' datatype='string' name='[batch_id]' role='dimension' type='nominal' />
+            <column-instance column='[Timestamp]' derivation='None' name='[none:Timestamp:nk]' pivot='key' type='nominal' />
+            <column-instance column='[batch_id]' derivation='None' name='[none:batch_id:nk]' pivot='key' type='nominal' />
+            <column caption='P H' datatype='real' name='[pH]' role='measure' type='quantitative' />
+            <column-instance column='[pH]' derivation='Sum' name='[sum:pH:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1675902035002650624]' derivation='User' name='[usr:Calculation_1675902035002650624:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[Action (Batch Id)]'>
+            <groupfilter function='member' level='[batch_id]' member='&quot;Batch_002&quot;' user:ui-action-filter='[Action1_59C12ABA507A4C459E2A3A7649B929C7]' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.14nth1j1mzcu7v10n55ey1padwc4].[Action (Batch Id)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:pH:qk]' field-type='quantitative' max='8.0302167872859993' min='6.8690939406826068' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.14nth1j1mzcu7v10n55ey1padwc4].[usr:Calculation_1675902035002650624:qk]' field-type='quantitative' fold='true' max='8.0302167872859993' min='6.8690939406826068' range-type='fixed' scope='rows' synchronized='true' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:pH:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+              <lod column='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.14nth1j1mzcu7v10n55ey1padwc4].[usr:Calculation_1675902035002650624:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+        </panes>
+        <rows>([federated.14nth1j1mzcu7v10n55ey1padwc4].[sum:pH:qk] + [federated.14nth1j1mzcu7v10n55ey1padwc4].[usr:Calculation_1675902035002650624:qk])</rows>
+        <cols>[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:Timestamp:nk]</cols>
+      </table>
+      <simple-id uuid='{B7E7761F-A0A6-4923-A93F-D20F985B50A8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98004' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='998' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98004' id='3' param='vert' type-v2='layout-flow' w='97538' x='1231' y='998' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3FCCFE7C-6E0F-490E-B7C6-DBF3710E7110}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98004' id='3' param='vert' type-v2='layout-flow' w='48769' x='1231' y='998'>
+            <zone h='98004' id='5' name='ph_time' w='48769' x='1231' y='998'>
+              <layout-cache minheight='366' type-h='scalable' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='98004' id='6' param='vert' type-v2='layout-flow' w='48769' x='50000' y='998' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98004' id='9' param='vert' type-v2='layout-flow' w='97538' x='1231' y='998'>
+                <zone fixed-size='280' h='98004' id='5' is-fixed='true' name='ph_time' w='48769' x='1231' y='998'>
+                  <layout-cache minheight='366' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5FAA2749-5B76-453C-AFBD-0552BACD3F6D}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Showcase Dashboard'>
+      <style />
+      <size maxheight='800' maxwidth='850' minheight='560' minwidth='220' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='23' param='vert' type-v2='layout-flow' w='98118' x='941' y='1000'>
+            <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98118' x='941' y='1000'>
+              <zone h='98000' id='10' param='horz' type-v2='layout-flow' w='98118' x='941' y='1000'>
+                <zone h='98000' id='1' param='vert' type-v2='layout-flow' w='79294' x='941' y='1000'>
+                  <zone fixed-size='325' h='40625' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='79294' x='941' y='1000'>
+                    <zone h='40625' id='7' name='ph_time' w='79294' x='941' y='1000'>
+                      <layout-cache cell-count-w='100' minheight='271' non-cell-size-w='147' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='32125' id='20' name='SHAP True Label' w='79294' x='941' y='41625'>
+                    <layout-cache minwidth='260' type-h='fixed' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='25250' id='15' name='Nanopore_Integ' w='79294' x='941' y='73750'>
+                    <layout-cache minwidth='402' type-h='fixed' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone fixed-size='160' h='98000' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='18824' x='80235' y='1000'>
+                  <zone h='29875' id='12' name='Batch_prop' w='18824' x='80235' y='1000'>
+                    <layout-cache fixed-size-h='231' fixed-size-w='160' type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='11625' id='13' name='Batch_prop' pane-specification-id='0' param='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' type-v2='color' w='18824' x='80235' y='30875'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='47375' id='14' name='UV_batch' w='18824' x='80235' y='42500'>
+                    <layout-cache cell-count-w='3' minheight='361' non-cell-size-w='69' type-h='scalable' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='9125' id='21' name='SHAP True Label' pane-specification-id='0' param='[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:True_Label:qk]' type-v2='color' w='18824' x='80235' y='89875'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='26' param='vert' type-v2='layout-flow' w='98118' x='941' y='1000'>
+                <zone fixed-size='280' h='40625' id='7' is-fixed='true' name='ph_time' w='79294' x='941' y='1000'>
+                  <layout-cache minheight='271' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='231' h='29875' id='12' is-fixed='true' name='Batch_prop' w='18824' x='80235' y='1000'>
+                  <layout-cache fixed-size-w='160' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11625' id='13' name='Batch_prop' pane-specification-id='0' param='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' type-v2='color' w='18824' x='80235' y='30875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='249' h='32125' id='20' is-fixed='true' name='SHAP True Label' w='79294' x='941' y='41625'>
+                  <layout-cache fixed-size-h='313' minwidth='260' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9125' id='21' name='SHAP True Label' pane-specification-id='0' param='[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:True_Label:qk]' type-v2='color' w='18824' x='80235' y='89875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47375' id='14' is-fixed='true' name='UV_batch' w='18824' x='80235' y='42500'>
+                  <layout-cache cell-count-w='3' minheight='361' non-cell-size-w='69' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='194' h='25250' id='15' is-fixed='true' name='Nanopore_Integ' w='79294' x='941' y='73750'>
+                  <layout-cache fixed-size-h='194' minwidth='402' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F7763472-C92E-497F-A221-ADEED9982397}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='4357' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='5187' />
+            <zone h='83506' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='15664'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point captured-sheet='' id='1' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{3C690067-C691-4AAA-81C4-EA48FEDC983D}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='115'>
+    <window class='worksheet' name='ph_time'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4E841CA5-0BF8-4E4D-86CC-B09BA655AD75}' />
+    </window>
+    <window class='worksheet' name='UV_batch'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A263955C-6495-4CB4-AD97-CF51CFD1135E}' />
+    </window>
+    <window class='worksheet' name='Nanopore_Integ'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0A83EB24-081E-4419-A3D6-8115BE081369}' />
+    </window>
+    <window class='worksheet' name='Batch_prop'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14nth1j1mzcu7v10n55ey1padwc4].[none:batch_id:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CAE1592F-9329-4228-8A9E-A9F646030BD6}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Showcase Dashboard'>
+      <viewpoints>
+        <viewpoint name='Batch_prop' />
+        <viewpoint name='Nanopore_Integ' />
+        <viewpoint name='SHAP True Label' />
+        <viewpoint name='UV_batch'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ph_time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{24C36D46-48EE-4CEF-BCE9-EEDD48FB3507}' />
+    </window>
+    <window class='worksheet' name='SHAP'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dwy7tw08l5khd10lfgaf1u2l751].[sum:Batch_ID_encoded:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9DA0A6AE-9116-4A32-8CA8-A735CF2772EC}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='7' />
+      <simple-id uuid='{025DE550-3D07-4565-BA5D-19FF1B63FB5C}' />
+    </window>
+    <window class='worksheet' name='SHAP True Label'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1yqk5uo0er4nkm1f3bsrf1hqdido].[sum:True_Label:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{32ABB8E3-CB0C-4C89-BB5E-B81132E7B68C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='ph_time'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{CCC4334B-7E56-46C4-B79B-93187403C793}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{D1ED602A-9BC6-4F75-AEF3-BF62CCA7F6AE}' />
+    </window>
+  </windows>
+</workbook>
